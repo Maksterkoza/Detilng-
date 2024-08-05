@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilny Detailing - Premium Usługi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #e0a800;
+        }
+        .service, .advantages {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #e0a800;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d49400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobilny Detailing - Premium Usługi</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>O nas</h2>
+            <p>Jesteśmy firmą specjalizującą się w mobilnym detailingu. Nasze usługi są wykonywane z najwyższą precyzją i dbałością o szczegóły.</p>
+        </section>
+
+        <section class="service">
+            <h2>Nasze Usługi</h2>
+            <p>Oferujemy szeroki zakres usług detailingowych, w tym mycie ręczne, polerowanie, woskowanie i wiele innych.</p>
+        </section>
+
+        <section class="advantages">
+            <h2>Zalety Mobilnego Detailingu</h2>
+            <p>Nasze usługi są wygodne i oszczędzają Twój czas. Dojeżdżamy pod wskazany adres, co pozwala Ci zaoszczędzić czas i cieszyć się profesjonalnie wyczyszczonym samochodem bez wychodzenia z domu.</p>
+        </section>
+
+        <section>
+            <h2>Rezerwacja Online</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numer telefonu</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit">Zarezerwuj</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Kontakt</h2>
+            <p>Numer telefonu: +48 123 456 789</p>
+            <p>Email: kontakt@mobiledetailing.pl</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mobilny Detailing. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Dziękujemy za zarezerwowanie usługi! Skontaktujemy się z Tobą wkrótce.');
+        });
+    </script>
+</body>
+</html>
